@@ -1,0 +1,36 @@
+pipeline {
+
+    agent any
+    stages {
+        stage('checkout') {
+            steps { 
+                echo 'Welcome to checkout'
+            }
+         }
+        stage('Build') {
+            steps { 
+                echo 'Welcome to Build'
+            }
+         }
+        stage('Test') {
+            steps { 
+                echo 'Welcome to Test'
+            }
+         }
+        stage('scan') {
+            steps { 
+                echo 'Welcome to scan'
+            }
+         }
+        stage('Push to artifactory') {
+            steps { 
+                echo 'Welcome to Artifactory'
+            }
+         }
+        stage('Deploy') {
+            steps { 
+                echo 'Welcome to Deploy'
+            }
+         }
+    }
+}
